@@ -14,8 +14,8 @@ class IngredientTest < Minitest::Test
 
   def test_readable_attributes
     assert_equal "Cheese", @ingredient1.name
-    assert_equal "oz", @ingredient.unit
-    assert_equal 50, @ingredient.calories
-  end 
+    assert_equal "oz", @ingredient1.unit
+    assert_equal 50, @ingredient1.calories
+  end
 
 end
