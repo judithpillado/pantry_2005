@@ -24,4 +24,8 @@ class CookBook
     end
   end
 
+  def summary
+    
+  end
+
 end
