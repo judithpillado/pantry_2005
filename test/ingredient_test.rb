@@ -10,6 +10,12 @@ class IngredientTest < Minitest::Test
 
   def test_it_exists
     assert_instance_of Ingredient, @ingredient1
+  end
+
+  def test_readable_attributes
+    assert_equal "Cheese", @ingredient1.name
+    assert_equal "oz", @ingredient.unit
+    assert_equal 50, @ingredient.calories
   end 
 
 end
