@@ -11,9 +11,13 @@ class Recipe
   end
 
   def ingredients
-    @ingredients_required.keys.flat_map do |ingredient|
-      ingredient
-    end 
+    @ingredients_required.keys
+  end
+
+  def total_calories
+    @ingredients_required.sum do |ingredient, amount|
+      ingredient.calories * amount
+    end
   end
 
 end
