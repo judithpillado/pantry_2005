@@ -19,5 +19,5 @@ def setup
   def test_it_exists
     assert_equal CookBook, @cookbook
   end
-  
+
 end
