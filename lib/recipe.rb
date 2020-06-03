@@ -1,6 +1,8 @@
 class Recipe
+  attr_reader :name 
 
   def initialize(name)
-  end 
+    @name = name
+  end
 
 end
