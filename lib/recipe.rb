@@ -8,6 +8,12 @@ class Recipe
 
   def add_ingredient(ingredient, amount)
     @ingredients_required[ingredient] += amount
-  end 
+  end
+
+  def ingredients
+    @ingredients_required.keys.flat_map do |ingredient|
+      ingredient
+    end 
+  end
 
 end
